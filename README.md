@@ -321,7 +321,7 @@ copies of the Software...
 
 ### ⭐ If you like this project, give it a star! ⭐
 
-**Made with ❤️ by [Your Name]**
+**Made with ❤️ by [Md Saif Ali]**
 
 ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=yourusername.university-website)
 
