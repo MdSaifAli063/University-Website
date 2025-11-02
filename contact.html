@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - University</title>
+    <link rel="stylesheet" href="University Website Design 1_files/website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="University Website Design 1_files/graduation-clipart-design-illustration-free-png.png" alt="University Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841328364497!2d-73.98887538434653!3d40.75889597932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Main Campus</h5>
+                        <p>123 University Avenue, Education City<br>Delhi, India 110001</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>Phone</h5>
+                        <p>+91 11 2345 6789<br>+91 11 2345 6790</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>Email</h5>
+                        <p>info@university.edu<br>admissions@university.edu</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-clock"></i>
+                    <span>
+                        <h5>Office Hours</h5>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="tel" name="phone" placeholder="Enter Phone Number">
+                    <input type="text" name="subject" placeholder="Enter Subject" required>
+                    <textarea name="message" rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                </form>
+                <div id="formMessage" style="margin-top: 20px; display: none;"></div>
+            </div>
+        </div>
+
+        <!-- Additional Contact Information -->
+        <div class="contact-info">
+            <h1>Get in Touch</h1>
+            <p>We're here to help! Whether you have questions about admissions, programs, or campus life, our team is ready to assist you.</p>
+            
+            <div class="row" style="margin-top: 40px;">
+                <div class="contact-card">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <h3>Admissions Office</h3>
+                    <p>For inquiries about admissions, applications, and enrollment processes.</p>
+                    <p><strong>Email:</strong> admissions@university.edu</p>
+                    <p><strong>Phone:</strong> +91 11 2345 6791</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-book"></i>
+                    <h3>Academic Affairs</h3>
+                    <p>Questions about courses, curriculum, and academic programs.</p>
+                    <p><strong>Email:</strong> academics@university.edu</p>
+                    <p><strong>Phone:</strong> +91 11 2345 6792</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <h3>Financial Aid</h3>
+                    <p>Information about scholarships, grants, and financial assistance.</p>
+                    <p><strong>Email:</strong> financialaid@university.edu</p>
+                    <p><strong>Phone:</strong> +91 11 2345 6793</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are committed to providing world-class education and creating opportunities for students to excel in their chosen fields.<br>Our mission is to foster innovation, critical thinking, and leadership skills in our students.</p>
+        <div class="icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> for Education Excellence</p>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 700) {
+                    hideMenu();
+                }
+            });
+        });
+
+        // Close menu when clicking outside
+        window.addEventListener('click', function(e) {
+            if (window.innerWidth <= 700 && !e.target.closest('.nav-links') && !e.target.closest('nav .fa')) {
+                hideMenu();
+            }
+        });
+
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const messageDiv = document.getElementById('formMessage');
+            
+            // Simulate form submission
+            messageDiv.style.display = 'block';
+            messageDiv.style.padding = '15px';
+            messageDiv.style.borderRadius = '5px';
+            messageDiv.style.backgroundColor = '#4CAF50';
+            messageDiv.style.color = 'white';
+            messageDiv.innerHTML = '<i class="fa fa-check-circle"></i> Thank you for contacting us! We will get back to you soon.';
+            
+            // Reset form
+            this.reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        });
+
+        // Add input validation styles
+        const inputs = document.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim() === '' && this.hasAttribute('required')) {
+                    this.style.borderColor = '#f44336';
+                } else {
+                    this.style.borderColor = '#ccc';
+                }
+            });
+            
+            input.addEventListener('input', function() {
+                if (this.value.trim() !== '') {
+                    this.style.borderColor = '#4CAF50';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - University</title>
+    <link rel="stylesheet" href="University Website Design 1_files/website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="University Website Design 1_files/graduation-clipart-design-illustration-free-png.png" alt="University Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Blog & News</h1>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="University Website Design_files/pexels-photo-3184325.jpeg" alt="Blog Post">
+                <h2>Celebrating Excellence: Annual Research Symposium 2024</h2>
+                <p>Posted on: <span>March 15, 2024</span> | Category: <span>Events</span> | Author: <span>University News Team</span></p>
+                <p>We are thrilled to announce our Annual Research Symposium, showcasing groundbreaking research from students and faculty across all disciplines. This year's symposium features over 200 research presentations, covering topics from artificial intelligence to sustainable energy solutions.</p>
+                <br>
+                <p>The event brings together researchers, industry experts, and students to exchange ideas and foster collaboration. Keynote speakers include Nobel laureate Dr. Sarah Johnson and tech entrepreneur Mark Chen, who will share insights on the future of research and innovation.</p>
+                <br>
+                <p>Students have the opportunity to present their research findings, network with professionals, and gain valuable feedback from experts in their field. The symposium also includes workshops on research methodology, grant writing, and career development in academia.</p>
+                <br>
+                <p>We invite all students, faculty, and external researchers to join us for this exciting event. Registration is now open, and early bird discounts are available until the end of this month.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name" required>
+                        <input type="email" placeholder="Enter Email" required>
+                        <textarea rows="5" placeholder="Your Comment" required></textarea>
+                        <button type="submit" class="hero-btn red-btn"><i class="fa-solid fa-paper-plane"></i> POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="blog-right">
+                <h3>Categories</h3>
+                <div>
+                    <span>Events</span>
+                    <span>12</span>
+                </div>
+                <div>
+                    <span>Research</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Student Life</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>Faculty</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Alumni</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>News</span>
+                    <span>22</span>
+                </div>
+
+                <h3 style="margin-top: 40px;">Recent Posts</h3>
+                <div class="recent-post">
+                    <img src="University Website Design 1_files/pexels-photo-5554236.jpeg" alt="Recent Post">
+                    <div>
+                        <h4>New Scholarship Program Announced</h4>
+                        <p>March 10, 2024</p>
+                    </div>
+                </div>
+                <div class="recent-post">
+                    <img src="University Website Design 1_files/pexels-photo-7972506.jpeg" alt="Recent Post">
+                    <div>
+                        <h4>Campus Expansion Project Begins</h4>
+                        <p>March 5, 2024</p>
+                    </div>
+                </div>
+                <div class="recent-post">
+                    <img src="University Website Design 1_files/pexels-photo-6084311.jpeg" alt="Recent Post">
+                    <div>
+                        <h4>Student Achievements Recognized</h4>
+                        <p>February 28, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Blog Posts -->
+        <div class="blog-posts">
+            <h1 style="text-align: center; margin-top: 60px; margin-bottom: 40px;">More News & Updates</h1>
+            <div class="row">
+                <div class="blog-post-card">
+                    <img src="University Website Design 1_files/pexels-photo-1907785.jpeg" alt="Blog Post">
+                    <h3>Library Renovation Complete</h3>
+                    <p>Our state-of-the-art library renovation is now complete, featuring modern study spaces, advanced technology, and an expanded collection of digital resources.</p>
+                    <a href="#" class="hero-btn red-btn"><i class="fa-solid fa-arrow-right"></i> Read More</a>
+                </div>
+                <div class="blog-post-card">
+                    <img src="University Website Design 1_files/pexels-photo-2277981.jpeg" alt="Blog Post">
+                    <h3>Sports Championship Victory</h3>
+                    <p>Our university's football team has won the national championship, bringing home the trophy after an exciting season of competition.</p>
+                    <a href="#" class="hero-btn red-btn"><i class="fa-solid fa-arrow-right"></i> Read More</a>
+                </div>
+                <div class="blog-post-card">
+                    <img src="University Website Design 1_files/pexels-photo-8617546.jpeg" alt="Blog Post">
+                    <h3>New Research Grants Awarded</h3>
+                    <p>Faculty members have received prestigious research grants totaling $5 million for projects in climate science, biotechnology, and sustainable engineering.</p>
+                    <a href="#" class="hero-btn red-btn"><i class="fa-solid fa-arrow-right"></i> Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are committed to providing world-class education and creating opportunities for students to excel in their chosen fields.<br>Our mission is to foster innovation, critical thinking, and leadership skills in our students.</p>
+        <div class="icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> for Education Excellence</p>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 700) {
+                    hideMenu();
+                }
+            });
+        });
+
+        // Close menu when clicking outside
+        window.addEventListener('click', function(e) {
+            if (window.innerWidth <= 700 && !e.target.closest('.nav-links') && !e.target.closest('nav .fa')) {
+                hideMenu();
+            }
+        });
+
+        // Form submission handler
+        document.querySelector('.comment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your comment! It will be reviewed and posted soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

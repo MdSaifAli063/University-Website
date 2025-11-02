@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/newweb.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="./University Website Design_files/website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./University Website Design_files/css2" rel="stylesheet">
+<link rel="stylesheet" href="./University Website Design_files/fontawesome.min.css">
+<link rel="stylesheet" href="./University Website Design_files/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="http://127.0.0.1:5500/website.html"><img src="./University Website Design_files/graduation-clipart-design-illustration-free-png.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/newweb.html">HOME</a></li>
+                    <li><a href="http://127.0.0.1:5500/newweb.html">ABOUT</a></li>
+                    <li><a href="http://127.0.0.1:5500/newweb.html">COURSE</a></li>
+                    <li><a href="http://127.0.0.1:5500/newweb.html">BLOG</a></li>
+                    <li><a href="http://127.0.0.1:5500/newweb.html">CONTACT</a></li>
+                 </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>About us</h1>
+       
+
+    </section>
+
+    <!--------about us content-------->
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's Largest university</h1>
+                <p>Higher education institutions are hubs of research and innovation. Professors, researchers, and students collaborate to push the boundaries of knowledge and develop new technologies, medicines, theories, and solutions to pressing global challenges.</p>
+                <a href="http://127.0.0.1:5500/newweb.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+
+            <div class="about-col">
+                <img src="./University Website Design_files/pexels-photo-3184325.jpeg">
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+<!--------footer-------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Quote incidents you appreciated and show what you mean by including a few <br>examples of what you want to say. Context means a lot when you are giving feedback. By comparing two similar cases with opposite experiences, you will be able to show what improvements you want to be incorporated.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-hand-holding-heart"></i> Easy Tutorials</p>
+</section>
+
+
+
+
+
+
+
+<!------javascript for Toggle Menu------->
+
+    <script>
+
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+    </script>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

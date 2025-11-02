@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - University</title>
+    <link rel="stylesheet" href="University Website Design 1_files/website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="University Website Design 1_files/graduation-clipart-design-illustration-free-png.png" alt="University Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About Us Content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are The World's Largest University</h1>
+                <p>Higher education institutions are hubs of research and innovation. Professors, researchers, and students collaborate to push the boundaries of knowledge and develop new technologies, medicines, theories, and solutions to pressing global challenges.</p>
+                <p>Our university stands as a beacon of excellence in education, research, and innovation. With a rich history spanning decades, we have continuously evolved to meet the changing needs of society while maintaining our commitment to academic excellence.</p>
+                <p>We offer a diverse range of programs across multiple disciplines, from undergraduate to doctoral levels. Our faculty comprises world-renowned scholars and researchers who are passionate about teaching and advancing knowledge in their respective fields.</p>
+                <a href="course.html" class="hero-btn red-btn"><i class="fa-solid fa-book-open"></i> EXPLORE COURSES</a>
+            </div>
+            <div class="about-col">
+                <img src="University Website Design_files/pexels-photo-3184325.jpeg" alt="University Building">
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="row">
+            <div class="stats-col">
+                <h2>50,000+</h2>
+                <p>Students Enrolled</p>
+            </div>
+            <div class="stats-col">
+                <h2>2,500+</h2>
+                <p>Faculty Members</p>
+            </div>
+            <div class="stats-col">
+                <h2>100+</h2>
+                <p>Programs Offered</p>
+            </div>
+            <div class="stats-col">
+                <h2>150+</h2>
+                <p>Countries Represented</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+        <div class="row">
+            <div class="mission-col">
+                <i class="fa-solid fa-bullseye"></i>
+                <h3>Our Mission</h3>
+                <p>To provide accessible, high-quality education that empowers students to achieve their full potential and make meaningful contributions to society. We are committed to fostering innovation, critical thinking, and ethical leadership.</p>
+            </div>
+            <div class="mission-col">
+                <i class="fa-solid fa-eye"></i>
+                <h3>Our Vision</h3>
+                <p>To be recognized as a global leader in higher education, known for academic excellence, groundbreaking research, and producing graduates who are equipped to address the complex challenges of the 21st century.</p>
+            </div>
+            <div class="mission-col">
+                <i class="fa-solid fa-gem"></i>
+                <h3>Our Values</h3>
+                <p>We value integrity, diversity, innovation, and excellence. These core principles guide everything we do and shape the educational experience we provide to our students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are committed to providing world-class education and creating opportunities for students to excel in their chosen fields.<br>Our mission is to foster innovation, critical thinking, and leadership skills in our students.</p>
+        <div class="icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> for Education Excellence</p>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 700) {
+                    hideMenu();
+                }
+            });
+        });
+
+        // Close menu when clicking outside
+        window.addEventListener('click', function(e) {
+            if (window.innerWidth <= 700 && !e.target.closest('.nav-links') && !e.target.closest('nav .fa')) {
+                hideMenu();
+            }
+        });
+    </script>
+</body>
+</html>

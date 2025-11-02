@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - University</title>
+    <link rel="stylesheet" href="University Website Design 1_files/website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="University Website Design 1_files/graduation-clipart-design-illustration-free-png.png" alt="University Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!-- Courses Content -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Explore our comprehensive range of programs designed to prepare you for success in your chosen career.</p>
+        
+        <div class="row">
+            <div class="course-col">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Undergraduate Programs</h3>
+                <ul>
+                    <li>Bachelor of Technology (B.Tech)</li>
+                    <li>Bachelor of Business Administration (BBA)</li>
+                    <li>Bachelor of Science (B.Sc)</li>
+                    <li>Bachelor of Arts (B.A)</li>
+                    <li>Bachelor of Commerce (B.Com)</li>
+                    <li>Bachelor of Medicine (MBBS)</li>
+                    <li>Bachelor of Law (LLB)</li>
+                </ul>
+                <p>Duration: 3-5 years | Full-time programs</p>
+            </div>
+            
+            <div class="course-col">
+                <i class="fa-solid fa-user-graduate"></i>
+                <h3>Postgraduate Programs</h3>
+                <ul>
+                    <li>Master of Business Administration (MBA)</li>
+                    <li>Master of Technology (M.Tech)</li>
+                    <li>Master of Science (M.Sc)</li>
+                    <li>Master of Arts (M.A)</li>
+                    <li>Master of Commerce (M.Com)</li>
+                    <li>Master of Law (LLM)</li>
+                    <li>Master of Medicine (MD)</li>
+                </ul>
+                <p>Duration: 1-2 years | Full-time & Part-time</p>
+            </div>
+            
+            <div class="course-col">
+                <i class="fa-solid fa-award"></i>
+                <h3>Doctoral Programs</h3>
+                <ul>
+                    <li>Ph.D. in Engineering</li>
+                    <li>Ph.D. in Management</li>
+                    <li>Ph.D. in Sciences</li>
+                    <li>Ph.D. in Humanities</li>
+                    <li>Ph.D. in Medicine</li>
+                    <li>Ph.D. in Law</li>
+                    <li>Ph.D. in Social Sciences</li>
+                </ul>
+                <p>Duration: 3-5 years | Research-based</p>
+            </div>
+        </div>
+
+        <!-- Specialized Programs -->
+        <h1 style="margin-top: 60px;">Specialized Programs</h1>
+        <div class="row">
+            <div class="course-col">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Computer Science & IT</h3>
+                <p>Programs in Software Engineering, Data Science, Cybersecurity, Artificial Intelligence, and Information Systems.</p>
+            </div>
+            <div class="course-col">
+                <i class="fa-solid fa-building"></i>
+                <h3>Business & Management</h3>
+                <p>Comprehensive business programs including Finance, Marketing, Human Resources, Operations, and Entrepreneurship.</p>
+            </div>
+            <div class="course-col">
+                <i class="fa-solid fa-flask"></i>
+                <h3>Engineering & Technology</h3>
+                <p>Programs in Mechanical, Electrical, Civil, Chemical, and Aerospace Engineering with modern facilities.</p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="course-col">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Medicine & Healthcare</h3>
+                <p>Medical programs including General Medicine, Surgery, Nursing, Pharmacy, and Public Health.</p>
+            </div>
+            <div class="course-col">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <h3>Law & Legal Studies</h3>
+                <p>Comprehensive law programs covering Corporate Law, Criminal Law, International Law, and Constitutional Law.</p>
+            </div>
+            <div class="course-col">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Arts & Humanities</h3>
+                <p>Programs in Literature, History, Philosophy, Fine Arts, Music, and Languages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are committed to providing world-class education and creating opportunities for students to excel in their chosen fields.<br>Our mission is to foster innovation, critical thinking, and leadership skills in our students.</p>
+        <div class="icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> for Education Excellence</p>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 700) {
+                    hideMenu();
+                }
+            });
+        });
+
+        // Close menu when clicking outside
+        window.addEventListener('click', function(e) {
+            if (window.innerWidth <= 700 && !e.target.closest('.nav-links') && !e.target.closest('nav .fa')) {
+                hideMenu();
+            }
+        });
+    </script>
+</body>
+</html>
