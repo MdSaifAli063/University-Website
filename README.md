@@ -224,7 +224,7 @@ background: linear-gradient(135deg, rgba(63, 81, 181, 0.75), rgba(156, 39, 176, 
 ## 📸 Screenshots
 
 ### 🖥️ Desktop View
-![Desktop View](https://via.placeholder.com/800x450/667eea/ffffff?text=Desktop+View)
+![Desktop View](https://github.com/MdSaifAli063/University-Website/blob/500fe4b50431d41fea97b5f858208a03fd6abebe/Screenshot%202025-11-04%20004608_edited.png)
 
 ### 📱 Mobile View
 ![Mobile View](https://via.placeholder.com/400x800/764ba2/ffffff?text=Mobile+View)
