@@ -281,10 +281,8 @@ If you find a bug, please open an issue with:
 
 **Md Saif Ali**
 
-- 🌐 Website: [yourwebsite.com](https://yourwebsite.com)
-- 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- 🌐 Website: [yourwebsite.com]()
 - 📧 Email: your.email@example.com
-- 🐦 Twitter: [@yourtwitter](https://twitter.com/yourtwitter)
 
 </div>
 
