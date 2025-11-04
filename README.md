@@ -224,10 +224,10 @@ background: linear-gradient(135deg, rgba(63, 81, 181, 0.75), rgba(156, 39, 176, 
 ## 📸 Screenshots
 
 ### 🖥️ Desktop View
-![Desktop View](https://via.placeholder.com/800x450/667eea/ffffff?text=Desktop+View)
+![Desktop View](https://github.com/MdSaifAli063/University-Website/blob/500fe4b50431d41fea97b5f858208a03fd6abebe/Screenshot%202025-11-04%20004608_edited.png)
 
 ### 📱 Mobile View
-![Mobile View](https://via.placeholder.com/400x800/764ba2/ffffff?text=Mobile+View)
+![Mobile View](https://github.com/MdSaifAli063/University-Website/blob/16e4452c30aff5806b9ed78e8d375a22cad0afca/Screenshot%202025-11-04%20010408_edited.png)
 
 > **Note**: Replace placeholder images with actual screenshots of your website.
 
@@ -279,7 +279,7 @@ If you find a bug, please open an issue with:
 
 <div align="left">
 
-**Your Name**
+**Md Saif Ali**
 
 - 🌐 Website: [yourwebsite.com](https://yourwebsite.com)
 - 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
@@ -321,7 +321,7 @@ copies of the Software...
 
 ### ⭐ If you like this project, give it a star! ⭐
 
-**Made with ❤️ by [Your Name]**
+**Made with ❤️ by [Md Saif Ali]**
 
 ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=yourusername.university-website)
 
