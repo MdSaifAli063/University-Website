@@ -13,6 +13,12 @@ body {
     width: 100%;
 }
 
+/* Make media responsive by default */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -343,7 +349,7 @@ nav img:hover {
 
 /* Heading */
 .text-box h1 {
-    font-size: 70px;
+    font-size: clamp(32px, 6vw, 70px);
     line-height: 1.1;
     margin: 5px auto 10px;
 }
@@ -358,7 +364,7 @@ nav img:hover {
 /* Subtitle */
 .hero-subtitle {
     max-width: 900px;
-    font-size: 18px;
+    font-size: clamp(14px, 2.1vw, 18px);
     color: rgba(255, 255, 255, 0.95);
     line-height: 1.7;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
@@ -488,20 +494,62 @@ nav img:hover {
 
 /* Responsive tweaks */
 @media (max-width: 992px) {
-    .text-box h1 { font-size: 46px; }
-    .hero-subtitle { font-size: 16px; }
+    .text-box h1 { font-size: clamp(28px, 5.2vw, 46px); }
+    .hero-subtitle { font-size: clamp(14px, 1.9vw, 16px); }
 }
 
 @media (max-width: 768px) {
-    .text-box h1 { font-size: 36px; }
-    .hero-subtitle { font-size: 15px; }
+    .text-box h1 { font-size: clamp(24px, 7vw, 36px); }
+    .hero-subtitle { font-size: clamp(13px, 2.5vw, 15px); }
     .hero-btn { padding: 12px 28px; }
 }
 
 @media (max-width: 480px) {
-    .text-box h1 { font-size: 28px; }
+    .text-box h1 { font-size: clamp(22px, 8vw, 28px); }
     .hero-subtitle { font-size: 14px; }
     .hero-stats { gap: 20px; padding: 15px; }
+}
+
+/* Tablet layout improvements */
+@media (max-width: 1024px) {
+    .header { background-attachment: scroll; }
+}
+
+@media (max-width: 992px) {
+    /* Use 2-column grids on tablets */
+    .course-col,
+    .campus-col,
+    .facilities-col,
+    .mission-col,
+    .blog-post-card,
+    .contact-card {
+        flex-basis: calc(50% - 15px);
+    }
+
+    /* Testimonials stack */
+    .testimonials-col { flex-basis: 100%; }
+
+    /* Drawer nav behavior up to 992px */
+    nav .fa-bars { display: flex; }
+    .nav-links {
+        position: fixed;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        z-index: 200;
+        transition: 1s;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.3);
+        padding: 0;
+    }
+    .nav-links ul { padding: 50px 30px; flex-direction: column; gap: 0; }
+    .nav-links ul li { display: block; margin: 10px 0; }
+    .nav-links ul li a { padding: 15px 20px; display: block; }
+
+    /* Map height for tablets */
+    .location iframe { height: 400px; }
 }
 
 nav .fa-bars {
@@ -1838,6 +1886,11 @@ h1 {
     .floating-shapes {
         display: none;
     }
+
+    /* Avoid jank on iOS for parallax headers */
+    .sub-header {
+        background-attachment: scroll;
+    }
     
     .nav-links ul li {
         display: block;
@@ -1910,6 +1963,12 @@ h1 {
     .blog-post-card,
     .contact-card {
         flex-basis: 100%;
+    }
+
+    /* Let images size naturally on narrow screens */
+    .campus-col img,
+    .facilities-col img {
+        height: auto;
     }
     
     .testimonials-col img {
